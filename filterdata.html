@@ -15,11 +15,18 @@
 
   <style>
   /* creates a gradient when scrolling... it has been changed*/
-  body{ background: linear-gradient(141deg, #ebf274 0%, #c2e59c 51%, #64b3f4 75%);}
+  body{ background: linear-gradient(141deg, #9C7A1C 31%, #E9A319 47%, #EDDD53 78%);}
   .card{
   border: 1px soild;
   padding: 4px;
   box-shadow: 4px 4px 4px #000000;
+}
+
+/*fr is basicaly length */
+#output {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  
 }
   </style>
 <nav>
@@ -31,6 +38,13 @@
 <div class="searchbar">
 <input type="text" id="search"/>
 <input type="submit" id="submit" value="Search" onclick="filterdata()" />
+</div>
+<div class="text">
+  <p>This is the page where you can view the leading causes of death from 2007-2014 in New York City.</p>
+<h1>Data Page</h1>
+<p>You can search death cases by searching a death cause and  year.</p>
+<p>Every entry is filtered thurough the input of year Between 2007 - 2014 or  cause of death Ex: respiratory disease. </p>
+<p>This is not case senstitive.</p>
 </div>
 
 <div id="output">
