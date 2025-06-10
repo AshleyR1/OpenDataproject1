@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="script.js"></script>
+  <head>
+</head>
+<body onload="init()">
+  <div class="image">
+    <div class="text" aria-placeholder="search">
+    <h1 style="font-size:50px; background: transparent;">NYC Leading Causes of Death</h1>
+      <h3 style=" background: transparent">Information</h3>
+  
+    </div>
+  </div>
+
+  <style>
+  body{ background: linear-gradient(141deg, #E1C16E 0%, #FFF8DC 51%, #FFDEAD 75%);}
+  .card{
+  border: 1px solid;
+  padding: 5px;
+  box-shadow: 2px 2px 4px #000000;
+}
+  </style>
+<nav>
+  <a href="home.html">Home</a>
+  <a href="filterdata.html">Data</a>
+    <a href="analysis.html">Analysis</a>
+</nav>
+
+<div class="searchbar">
+<input type="text" id="search"/>
+<input type="submit" id="submit" value="Search" onclick="filterdata()" />
+</div>
+
+<div id="output">
+
+
+    
+</div>
+
+<footer>
+  <p>Copyright &copy; Ashley Romero, 2025; data from Opendata.</p>
+</footer>
+    
+</body>
+</html>

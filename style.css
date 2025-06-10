@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+  transition-duration: 200ms;
+}
+
+body {
+  margin: 0;
+  background-color: bisque;
+  font-family: Arial, Helvetica, sans-serif;
+  display:flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://pixelz.cc/wp-content/uploads/2018/12/new-york-cityscape-uhd-4k-wallpaper.jpg");
+  height: 20vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+p {
+  font-size: 1rem;
+}
+nav {
+  display:flex;
+  background-color:#c4a44e;
+  justify-content: center;
+  text-align: center;
+}
+
+
+
+nav a {
+	flex:1;
+	 padding:10px;
+	text-decoration:none;
+  color: white;
+}
+
+nav a:hover {
+  background-color: #9c7a1c;
+}
+
+nav a:visited {
+  color: white;
+}
+
+nav a:active {
+  color: gold;
+}
+
+section {
+  margin: 2rem;
+
+}
+
+section h1 {
+  background-color: rgba(255, 196, 0, 0.5);
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+
+.searchbar {
+  margin: 2rem;
+  display:flex;
+  width: calc(100% - 4rem);
+}
+
+.searchbar input {
+  flex: 9;
+  padding: 1rem;
+  font-size: large;
+  background-color: whitesmoke;
+  border: solid white 1px;
+  border-radius: 5px;
+}
+
+#submit {
+  flex: 1; 
+  background-color: #FFE5B4;
+
+}
+
+#submit:hover {
+  background-color: #ECFFDC	;
+}
+   
+
+
+.card {
+  background-color: rgba(255, 196, 0, 0.5);
+  padding: 0.5rem;
+  border-radius: 1rem;
+  border: #c4a44e 1px solid;
+  margin: 2rem;
+
+  flex-direction: row;
+  gap: 1rem;
+  position:relative;
+   width: 50%;
+  height: 50%;
+  
+ 
+}
+
+
+
+.card * {
+  margin: 0;
+
+}
+.card h1 {
+  
+  font-weight: bold;
+  margin: 0 auto; /* Center the text container */
+  padding: 10px;
+  width: 50%;
+
+  mix-blend-mode: difference;
+  background-color: rgba(255, 196, 0, 0.5);
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+
+
+.text {
+  text-align: center;
+  color: white;
+}
+
+footer {
+  background-color: rgba(255, 196, 0, 0.5);
+  padding: 0.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: auto;
+}
